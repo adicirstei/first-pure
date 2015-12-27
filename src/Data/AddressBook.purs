@@ -37,3 +37,7 @@ showAddress address =
 emptyAddressBook :: AddressBook
 emptyAddressBook = empty
 
+insertEntry :: Entry -> AddressBook -> AddressBook
+insertEntry e, ab =
+
+
