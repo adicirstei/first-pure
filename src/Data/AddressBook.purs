@@ -6,14 +6,14 @@ import Data.Maybe
 
 import Control.Plus (empty)
 
-type Entry = 
+type Entry =
   { firstName :: String
   , lastName :: String
   , address :: Address
   }
 
 type Address =
-  { street :: String 
+  { street :: String
   , city :: String
   , state :: String
   }
@@ -22,7 +22,7 @@ type AddressBook = List Entry
 
 showEntry :: Entry -> String
 showEntry entry =
-  entry.lastName ++ ", " ++ 
+  entry.lastName ++ ", " ++
   entry.firstName ++ ": " ++
   showAddress entry.address
 
@@ -30,14 +30,12 @@ showEntry entry =
 showAddress :: Address -> String
 showAddress address =
   address.street ++ ", " ++
-  address.city ++ ", " ++ 
+  address.city ++ ", " ++
   address.state
 
 
 emptyAddressBook :: AddressBook
 emptyAddressBook = empty
 
-insertEntry :: Entry -> AddressBook -> AddressBook
-insertEntry e, ab =
-
-
+-- insertEntry :: Entry -> AddressBook -> AddressBook
+-- insertEntry e, ab =
